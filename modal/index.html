@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button>Click here</button>
+
+    <!-- modal header -->
+    <section>
+      <div class="modal">
+        <div class="modal-header">
+          <h3>modal header</h3>
+          <p class="close">X</p>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+            minus tempore harum! Ab sed iste velit cumque consequuntur molestiae
+            numquam reprehenderit, facere amet veritatis quaerat? In iste
+            temporibus ea necessitatibus.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <p>Thanks</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const section = document.querySelector("section");
+      const close = document.querySelector(".close");
+      const buttonClick = document.querySelector("button");
+
+      buttonClick.addEventListener(
+        "click",
+        () => (section.style.display = "block")
+      );
+      close.addEventListener("click", () => (section.style.display = "none"));
+    </script>
+  </body>
+</html>
